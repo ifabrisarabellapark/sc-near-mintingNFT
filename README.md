@@ -7,7 +7,7 @@
 
 # Minting an NFT on NEAR Protocol :ringed_planet: :roller_skate: :kick_scooter:
 
-In this guide, you'll learn how to mint an NFT on NEAR Protocol blockchain (testnet) via a Rust Smart Contract. This guide walks you through all steps for quick deployment of the contract, but doesn't walk explain the actual logic of the NFT-minting contract :nerd_face: :shipit: :bowtie:, if you want to learn how to write a smart contract o mint NFTs on near, then follow [this](https://docs.near.org/docs/tutorials/contracts/nfts/introduction) tutorial in the official NEAR documentation. 
+In this guide, you'll learn how to mint an NFT on NEAR Protocol blockchain (testnet) via a Rust Smart Contract. This guide walks you through all steps to quickly deploy the contract, yet the guide doesn't explain the actual logic of the NFT-minting contract :nerd_face: :shipit: :bowtie:, if you want to learn how to write a smart contract or mint NFTs on near, then follow [this](https://docs.near.org/tutorials/nfts/introduction) tutorial in the official NEAR documentation. 
 
 ---
 
@@ -42,7 +42,7 @@ This guide assumes you already have a ready-to-deploy smart contract. If you hav
 
 ## Login Near wallet
 
-To login to your Near wallet (testnet account), run in terminal the command below and follow the pop-up prompts
+To log into your Near wallet (testnet account), run in terminal the command below and follow the pop-up prompts
 ```bash
 near login
 ```
@@ -74,7 +74,7 @@ Congratulations :raised_hands: :tada: :partying_face: ! You've just minted an NF
 
 ## Redeploy (patch fixes)
 
-Imagine you have an already-deployed smart contract. Assume you want to upgrade/change/add functionalities to such contract by altering its Rust code. The correct way to do so is by using *deployment patch fixes* (see official doc [here](https://docs.near.org/docs/tutorials/contracts/nfts/upgrade-contract)), namely code patches to a contract that had been previously deployed. To upgrade a contract follow the next steps:
+Imagine you have an already-deployed smart contract. Assume you want to upgrade/change/add functionalities to such contract by altering its Rust code. The correct way to do so is by using *deployment patch fixes* (see official doc [here](https://docs.near.org/tutorials/nfts/upgrade-contract)), namely code patches to a contract that had been previously deployed. To upgrade a contract follow the next steps:
 
 * change the current code to add the desired functionality
 * run in terminal from the root directory 
