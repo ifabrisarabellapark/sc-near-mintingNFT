@@ -36,6 +36,25 @@ rustup target add wasm32-unknown-unknown                            # Add Wasm t
 
 Some -but not all- Smart Contracts (e.g., SCRT Network, NEAR Protocol, etc.) compile to WebAssembly (Wasm) <br /> and that's why we add the toolchain for Rust :sheep:.
 
+
+###### Version Management
+Over time you'll need to manage rust versions. Notice that often your rustup toolchain manager and your rust compiler run on different versions and this is totally fine. Check the official [rust-lang](https://github.com/rust-lang/rust/blob/master/RELEASES.md) Git repo for new releases. Lastly, keep your toolchain and compilers up to date:
+```bash
+#check for current version
+rustup --version
+rustc --version
+cargo --version
+
+#update to the newest version
+rustup update
+
+#install a specific rust version
+rustup install 1.63.0
+
+#target a specific version of Rust
+rustup override set 1.63.0
+```
+
 ## Prep smart contract
 
 This guide assumes you already have a ready-to-deploy smart contract. If you haven't, download from the official NEAR GitHub repo found [here](https://github.com/near-examples/nft-tutorial) a full-fledged smart contract to mint NFTs. Notice that this Repo has many branches. Each branch corresponds to the incremental spet in the smart contract development. Refer to the last branch if you want the most complete version of the contract. 
